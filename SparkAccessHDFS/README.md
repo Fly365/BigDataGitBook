@@ -1,4 +1,7 @@
 #Spark访问HDFS
+**推广: 更快更好的翻墙神器 [红杏]( http://honx.in/i/VPZdDZnKEyd7byzB)**
+
+---
 为了使用HDFS，需要配置Hadoop集群。这里使用伪分布式集群（Hadoop版本是1.2.1），参见[Pseudo-Distributed Configuration](http://hadoop.apache.org/docs/r1.2.1/single_node_setup.html)。
 
 ![hdfs](hdfs-config.png)

@@ -1,4 +1,9 @@
 #本地模式下运行Hadoop
+
+**推广: 更快更好的翻墙神器 [红杏]( http://honx.in/i/VPZdDZnKEyd7byzB)**
+
+---
+
 下面是针对Hadoop1.2.1的。
 
 由于默认情况下Hadoop就是针对单机本地模式的，所以除了在`conf/hadoop-evn.sh`指定`JAVA_HOME`，不需要其他配置。（如果你的JAVA_HOME之前已经添加到环境变量，这一步是可以省略的）
