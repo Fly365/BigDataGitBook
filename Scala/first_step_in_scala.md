@@ -96,3 +96,30 @@ val pair = (99, "Luftballons")println(pair._1)println(pair._2)
 
 你可能在想，为什么不能使用括号直接访问？因为像List，`apply`返回的类型是一样的，而tuple包含的类型不一定一样。
 
+- **Try**类型
+
+Type是种类型，表示可能会抛出异常的计算，也可能返回正确的计算值。和`Either`相似。
+
+
+参考[Option, Either, Try](http://my.oschina.net/yangbajing/blog/108652)
+
+Try[T]的实例要么是 `scala.util.Success[T]`，要么是`scala.util.Failure[T]`。
+
+```
+import scala.util.{Try, Success, Failure}
+
+def divide: Try[Int] = {
+  val dividend = Try(Console.readLine("Enter an Int that you'd like to divide:\n").toInt)
+  val divisor = Try(Console.readLine("Enter an Int that you'd like to divide by:\n").toInt)
+  val problem = dividend.flatMap(x => divisor.map(y => x/y))
+  problem match {
+    case Success(v) =>
+      println("Result of " + dividend.get + "/"+ divisor.get +" is: " + v)
+      Success(v)
+    case Failure(e) =>
+      println("You must've divided by zero or entered something that's not an Int. Try again!")
+      println("Info from the exception: " + e.getMessage)
+      divide
+  }
+}
+```
