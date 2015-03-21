@@ -39,4 +39,4 @@ hires0: Boolean = true
 var line = ""        while ((line = readLine()) != "") // This doesn’t work!println("Read: "+ line)
 ```
 编译这段代码，Scala会给出警告。因为赋值语句总是返回Unit。就是说 `line = readLine()`始终返回Unit。
-因为while循环不返回有意义的值，它在纯函数式编程语言里一般不存在。这些语言只有表达式，没有循环。Scala保留它主要是因为有时命令式的语句更有可读性。
+因为while循环不返回有意义的值，它在纯函数式编程语言里是一般不存在。这些语言只有表达式，没有循环。Scala保留它主要是因为有时命令式的语句更有可读性。
