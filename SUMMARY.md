@@ -5,3 +5,4 @@
 * [Scala语法](Scala/README.md)
     - [First Step in Scala](Scala/first_step_in_scala.md)
     - [Built-in Control Structure](Scala/built_in_control_structure.md)
+* [PageRank的Spark实现](PageRank/README.md)
