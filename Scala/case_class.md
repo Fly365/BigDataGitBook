@@ -34,3 +34,17 @@ case class App(f: Term, v: Term) extends Term
 
 构造器的每个参数都是public的，且编译器会根据字段自动生成equals方法和 tostring方法。
 
+
+```
+scala> case class Calculator(brand: String, model: String)
+scala> val hp20b = Calculator("hp", "20b")
+hp20b: Calculator = Calculator(hp,20b)
+
+scala> val hp20B = Calculator("hp", "20b")
+hp20B: Calculator = Calculator(hp,20b)
+
+scala> hp20b == hp20B
+res6: Boolean = true
+```
+
+不需要使用new。
