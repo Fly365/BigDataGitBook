@@ -123,3 +123,23 @@ def divide: Try[Int] = {
   }
 }
 ```
+
+- **Hash, Set**
+
+Scala里面Hash和Set同时提供了immutable版本和mutable版本。
+
+默认都是immutable的。
+
+```
+var jetSet = Set("Boeing", "Airbus")
+jetSet += "Lear"
+```
+
+immutable版本的Set是没有+=方法的，所以上面其实是:
+
+```
+jetSet = jetSet + "Lear"
+```
+的缩写。因为再次赋值了，所以必须是var。
+
+但是mutable版本里面是有+=和+方法的。
