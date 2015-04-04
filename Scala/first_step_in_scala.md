@@ -143,3 +143,26 @@ jetSet = jetSet + "Lear"
 的缩写。因为再次赋值了，所以必须是var。
 
 但是mutable版本里面是有+=和+方法的。
+
+
+- 有关方法
+
+```
+def checksum(): Int = { return ~(sum & 0xFF) + 1}```
+可以简写为，
+
+```
+def checksum(): Int = { ~(sum & 0xFF) + 1}```
+因为，**如果没有显式的返回，就会返回最后一个值**。
+```def add(b: Byte): Unit = sum += b```
+可以省略等于号，并添加花括号。
+```
+def add(b: Byte) { sum += b }
+```
+因为，**方法体前面没有等于号，肯定就是Unit的**。
+
+```
+scala> def g() { "this String gets lost too" }        g: ()Unit```
+```
+scala> def h() = { "this String gets returned!" }        h: ()java.lang.String
+```
