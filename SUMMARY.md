@@ -10,3 +10,4 @@
     - [Matching](Scala/matching.md)
     - [Case Classes](Scala/case_class.md)
 * [PageRank的Spark实现](PageRank/README.md)
+* [Spark SQL的Catalyst优化器](SparkSQLOptimizer/README.md)
