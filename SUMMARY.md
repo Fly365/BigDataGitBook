@@ -10,5 +10,6 @@
     - [Matching](Scala/matching.md)
     - [Case Classes](Scala/case_class.md)
     - [Concurrency](Scala/Concurrency/README.md)
+      - [Actor初识](Scala/Concurrency/actor_start.md)
 * [PageRank的Spark实现](PageRank/README.md)
 * [Spark SQL的Catalyst优化器](SparkSQLOptimizer/README.md)
