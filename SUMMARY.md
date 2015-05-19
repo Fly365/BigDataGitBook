@@ -9,5 +9,6 @@
     - [Functions and Closures](Scala/functions_and_closures.md)
     - [Matching](Scala/matching.md)
     - [Case Classes](Scala/case_class.md)
+    - [Concurrency](Scala/Concurrency/README.md)
 * [PageRank的Spark实现](PageRank/README.md)
 * [Spark SQL的Catalyst优化器](SparkSQLOptimizer/README.md)
